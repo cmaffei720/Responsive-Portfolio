@@ -7,13 +7,13 @@
   <body>
     <script>
 
-        var rockpaperscissor = ["r", "p", "s"];
+        var rockpaperscissor = ["rock", "paper", "scissors"];
         var myScore = 0
         var comScore = 0
 
         // loop statement 
         for (var i = 0; i < 10 ; i++) {
-            myChoice = prompt("Choose r, p, or s")
+            myChoice = prompt("Choose rock, paper, or scissors")
             computerNumber = Math.floor(Math.random() * 3)
             computerChoice = rockpaperscissor[computerNumber]
             console.log(myChoice)
@@ -25,27 +25,27 @@
 
         //winners and losers
 
-        else if (myChoice === "r" && computerChoice === "p") {
+        else if (myChoice === "rock" && computerChoice === "paper") {
             comScore = comScore + 1
             alert("you lose, your score is " + myScore + " and computer score is " + comScore)}
 
-        else if (myChoice === "r" && computerChoice === "s") {
+        else if (myChoice === "rock" && computerChoice === "scissors") {
             myScore = myScore + 1
             alert("you win, your score is " + myScore + " and computer score is " + comScore)}
 
-        else if (myChoice === "s" && computerChoice === "r") {
+        else if (myChoice === "scissors" && computerChoice === "rock") {
             comScore = comScore + 1
             alert("you lose, your score is " + myScore + " and computer score is " + comScore)}
 
-        else if (myChoice === "s" && computerChoice === "p") {
+        else if (myChoice === "scissors" && computerChoice === "paper") {
             myScore = myScore + 1
             alert("you win, your score is " +  myScore + " and computer score is " +  comScore)}
 
-        else if (myChoice === "p" && computerChoice === "s") {
+        else if (myChoice === "paper" && computerChoice === "scissors") {
             comScore = comScore + 1
             alert("You lose, your score is " +  myScore + " and computer score is " +  comScore)}
 
-        else if (myChoice === "p" && computerChoice === "r") {
+        else if (myChoice === "paper" && computerChoice === "rock") {
             myScore = myScore + 1
             alert("you win, your score is " +  myScore + " and computer score is " +  comScore)}
         
